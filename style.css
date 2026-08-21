@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0b1b2b;
+  color: #f5f5f5;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #10263d;
+}
+
+main {
+  padding: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #14273c;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.player iframe,
+.player audio {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+}
+
+footer {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  background: #10263d;
+}
