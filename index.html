@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Monastir Live</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>Monastir Live</h1>
+    <p>Webcams, Radio, TV – en direct</p>
+  </header>
+
+  <main>
+    <!-- Webcam Plage Monastir -->
+    <section class="card">
+      <h2>Webcam Plage Monastir</h2>
+      <div class="player">
+        <iframe src="https://www.skylinewebcams.com/fr/webcam/tunisie/monastir/monastir/plage-monastir.html"
+                width="100%" height="300" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Webcam Port Monastir -->
+    <section class="card">
+      <h2>Webcam Port de Monastir</h2>
+      <div class="player">
+        <iframe src="https://www.skylinewebcams.com/fr/webcam/tunisie/monastir/monastir/port-de-monastir.html"
+                width="100%" height="300" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- Radio Monastir -->
+    <section class="card">
+      <h2>Radio Monastir</h2>
+      <div class="player">
+        <audio controls src="http://rtstream.tunisietelecom.tn:8000/monastir"></audio>
+      </div>
+    </section>
+
+    <!-- TV Tunisie -->
+    <section class="card">
+      <h2>TV Nationale 1</h2>
+      <div class="player">
+        <iframe src="https://www.watania1.tn/live"
+                width="100%" height="300" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>TV Nationale 2</h2>
+      <div class="player">
+        <iframe src="https://www.watania2.tn/live"
+                width="100%" height="300" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© Monastir Live – Streaming légal</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
