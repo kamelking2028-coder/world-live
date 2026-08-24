@@ -1,6 +1,6 @@
 {
-  "name": "Monastir Live",
-  "short_name": "MonastirLive",
+  "name": "World Live",
+  "short_name": "WORLDLive",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#0b1b2b",
