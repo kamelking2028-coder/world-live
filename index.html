@@ -8,16 +8,51 @@
   <link rel="manifest" href="manifest.json">
    <!-- (optionnel) Canonique -->
   <link rel="canonical" href="https://kamelking2028-coder.github.io/world-live/">
- 
+  <section class="hero">
+  <div class="hero-text">
+    <h1>Comment utiliser le site</h1>
+    <p>Dans cette vidéo, je t’explique comment naviguer, trouver les radios/TV et profiter au maximum.</p>
+    <a href="#videos" class="cta">Voir toutes les vidéos</a>
+  </div>
+
+  <div class="hero-video">
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID"
+              title="Tutoriel"
+              frameborder="0"
+              allowfullscreen></iframe>
+    </div>
+  </div>
+</section> 
 </head>
   
 <body>
+
+  <section id="videos" class="video-grid">
+  <article class="video-card">
+    <div class="thumb-wrapper">
+      <img src="thumb1.jpg" alt="Titre vidéo 1">
+    </div>
+    <h2 class="video-title">Titre vidéo 1</h2>
+    <p class="video-meta">Tutoriel • 8 min</p>
+  </article>
+
+  <article class="video-card">
+    <div class="thumb-wrapper">
+      <img src="thumb2.jpg" alt="Titre vidéo 2">
+    </div>
+    <h2 class="video-title">Titre vidéo 2</h2>
+    <p class="video-meta">Présentation • 5 min</p>
+  </article>
+</section>
+
   <header>
     <h1>BIENVENUE SUR WORLD LIVE</h1>
     <p>Webcams, Radio, TV – en direct</p>
   </header>
       <!-- Monetag Multitag IA (optimisé) -->       
   <main> 
+  <            
   <section class="card">
     <h2>🌍ISS en Direct 24/7 : NASA, Terre depuis l’Espace </h2>
         <div class="player">
@@ -196,33 +231,9 @@
                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-         </section> 
+         </section>
 
- <!-- Grille de vidéos -->
-  <section id="videos" class="video-grid">
-    <article class="video-card">
-      <div class="thumb-wrapper">
-        <img src="thumb1.jpg" alt="Titre vidéo 1">
-      </div>
-      <h2 class="video-title">Titre vidéo 1</h2>
-      <p class="video-meta">Tutoriel • 8 min</p>
-    </article>
 
-    <article class="video-card">
-      <div class="thumb-wrapper">
-        <img src="thumb2.jpg" alt="Titre vidéo 2">
-      </div>
-      <h2 class="video-title">Titre vidéo 2</h2>
-      <p class="video-meta">Présentation • 5 min</p>
-    </article>
-
-    <!-- Duplique autant de cartes que tu veux -->
-  </section>      
-      <section class="player">  
-        <div id="webcams"></div>
-        <script src="data/sources.js"></script>
-        <script src="app.js"></script>
-      </section>  
   </main>
 
   <footer>
