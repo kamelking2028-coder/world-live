@@ -35,13 +35,24 @@
       </div>
      </div>
 </section> 
- <article class="video Foot">
-      <iframe width="560" height="315" src="https://bein-xtra-samsung-canada.amagi.tv/playlist.m3u8" 
-         title="KML video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-         encrypted-media; gyroscope; picture-in-picture; web-share" 
-         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h2>💨💨 FOOT  LIVE </h2>
-    </article>
+<article class="video Foot">
+  <video id="playerFoot" controls width="560" height="315"></video>
+  <h2>💨💨 FOOT LIVE</h2>
+</article>
+
+<script>
+  const video = document.getElementById('playerFoot');
+  const url = "https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8";
+
+  if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(url);
+      hls.attachMedia(video);
+  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = url; // Safari iPhone/iPad
+  }
+</script>
+
 <main>
 
   <!-- GRILLE DE VIDÉOS -->
