@@ -40,6 +40,9 @@
   <video id="playerFoot" controls width="560" height="315"></video>
   <h2>💨💨 FOOT LIVE</h2>
 </article>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<video id="playerFoot" controls width="560" height="315"></video>
 
 <script>
   const video = document.getElementById('playerFoot');
@@ -50,10 +53,9 @@
       hls.loadSource(url);
       hls.attachMedia(video);
   } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = url; // Safari iPhone/iPad
+      video.src = url;
   }
 </script>
-
 
 <main>
 
