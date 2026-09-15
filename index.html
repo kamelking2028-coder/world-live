@@ -33,18 +33,18 @@
      </div>
 </section> 
  <!--STREAM TV ---> 
+<!-- STREAM TV -->
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
- <video id="playerFoot" controls width="560" height="315"></video>
-  
+<video id="playerFoot" controls width="560" height="315"></video>
+
+<script>
   const video = document.getElementById('playerFoot');
-  
-  <h2>Miami Walking</h2>
-  const url = <iframe width="560" height="315" src="https://www.youtube.com/embed/GgmD8xuOqMM?si=BKYa55QdxecS6Wmq"
-  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-  encrypted-media; gyroscope; picture-in-picture; 
-  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>;
-  
+
+  // ⚠️ YouTube n'est PAS compatible avec HLS.js
+  // Il faut une URL .m3u8 (stream direct)
+  const url = "https://exemple.com/live/stream.m3u8";
+
   if (Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(url);
@@ -53,7 +53,13 @@
       video.src = url;
   }
 </script>
-
+  <article class="video-card">
+  <h2>Miami Walking</h2>
+  const url = <iframe width="560" height="315" src="https://www.youtube.com/embed/GgmD8xuOqMM?si=BKYa55QdxecS6Wmq"
+  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+  encrypted-media; gyroscope; picture-in-picture; 
+  web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>;
+   </article>
 
 <main>
 
