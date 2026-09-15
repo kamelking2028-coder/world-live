@@ -2,13 +2,12 @@
 <html lang="fr">
 <head>
   <!-- Monetag-->  
-  
-   <meta charset="UTF-8">
-   <title>WORLD LIVE</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="manifest" href="manifest.json">
-   <link rel="canonical" href="https://kamelking2028-coder.github.io/world-live/">
+  <meta charset="UTF-8">
+  <title>WORLD LIVE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="canonical" href="https://kamelking2028-coder.github.io/world-live/">
 </head>
   
 <body>
@@ -25,112 +24,134 @@
    
     <div class="hero-video">
       <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4BrvMGznLTo?si=-f_u03pUNFU483dJ"
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-             gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-     </div>
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/4BrvMGznLTo?si=-f_u03pUNFU483dJ"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </div>
- <!--STREAM TV ---> 
-<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  </section> <!-- FERMETURE HERO OBLIGATOIRE -->
 
-<video id="playerFoot" controls width="560" height="315"></video>
+  <!-- STREAM TV -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 
-<script>
-  const video = document.getElementById('playerFoot');
+  <video id="playerFoot" controls width="560" height="315"></video>
 
-  // ⚠️ YouTube n'est PAS compatible avec HLS.js
-  // Il faut une URL .m3u8 (stream direct)
-  const url = "https://exemple.com/live/stream.m3u8";
+  <script>
+    const video = document.getElementById('playerFoot');
 
-  if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(url);
-      hls.attachMedia(video);
-  } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-      video.src = url;
-  }
-</script>
+    // ⚠️ YouTube n'est PAS compatible avec HLS.js
+    // Il faut une URL .m3u8 (stream direct)
+    const url = "https://exemple.com/live/stream.m3u8";
 
-<main>
+    if (Hls.isSupported()) {
+        const hls = new Hls();
+        hls.loadSource(url);
+        hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = url;
+    }
+  </script>
 
-  <!-- GRILLE DE VIDÉOS -->
-  <section id="videos" class="video-grid">
-   <article class="video-card">
+  <main>
 
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/B4-L2nfGcuE?si=fmLPhHvg8c9IEXYQ" 
-                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-                  encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <h2>BigBear Valley Eagle Live</h2> 
-   </article>
+    <!-- GRILLE DE VIDÉOS -->
+    <section id="videos" class="video-grid">
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/ydYDqZQpim8?si=MHxiDByhTne4APh_" allowfullscreen></iframe>
-      <h2>NAMIBIA</h2>
-    </article>
+      <article class="video-card">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/B4-L2nfGcuE?si=fmLPhHvg8c9IEXYQ"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>BigBear Valley Eagle Live</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/qwvk5hbEJnY?si=jOusl2b2ZOFNqaA2" allowfullscreen></iframe>
-      <h2>Safarihoek - Namibia</h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/ydYDqZQpim8?si=MHxiDByhTne4APh_" allowfullscreen></iframe>
+        <h2>NAMIBIA</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/TAkk2B9GOmc?si=bp_2dFYYdiIjOpjk" allowfullscreen></iframe>
-      <h2>ISS NASA Live</h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/qwvk5hbEJnY?si=jOusl2b2ZOFNqaA2" allowfullscreen></iframe>
+        <h2>Safarihoek - Namibia</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/loHbMM9JfCs?si=Od-P7Vl_h5kTTzV9" allowfullscreen></iframe>
-      <h2>Plage Curaçao</h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/TAkk2B9GOmc?si=bp_2dFYYdiIjOpjk" allowfullscreen></iframe>
+        <h2>ISS NASA Live</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/PY34z4Iamws?si=XEzmoNWlAE2KM47y" allowfullscreen></iframe>
-      <h2>Monastir</h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/loHbMM9JfCs?si=Od-P7Vl_h5kTTzV9" allowfullscreen></iframe>
+        <h2>Plage Curaçao</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/7i8ARjIeM2k?si=3_Z8yJDcTQL2jeu1" allowfullscreen></iframe>
-      <h2>Coral City Miami</h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/PY34z4Iamws?si=XEzmoNWlAE2KM47y" allowfullscreen></iframe>
+        <h2>Monastir</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe src="https://www.youtube.com/embed/9TnmuxJuw60?si=QkDbjitSQUXsq2Ka" allowfullscreen></iframe>
-      <h2>Heathrow Airport</h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/7i8ARjIeM2k?si=3_Z8yJDcTQL2jeu1" allowfullscreen></iframe>
+        <h2>Coral City Miami</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe width="560" height="315" src="https://www.shahid-kora.live/p/blog-page_801.html?fbclid=IwY2xjawUSTuxwZG9mAWV4dG4DYWVtAjEwAGJyaWQRMFlpTzNORXJvV0RJZFdWeWVzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeOwKMVk2OhuxcfT9-L-PLl0Ed03Gu8NKIobg007DpgMIk9RUMbQDI6IAe6wc_aem_LhYF-Z3nhFqCJmaqfAJoxg&m=1" 
-         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-         encrypted-media; gyroscope; picture-in-picture; web-share" 
-         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h2>💨💨 ANCHORAGE AIRPORT LIVE </h2>
-    </article>
+      <article class="video-card">
+        <iframe src="https://www.youtube.com/embed/9TnmuxJuw60?si=QkDbjitSQUXsq2Ka" allowfullscreen></iframe>
+        <h2>Heathrow Airport</h2>
+      </article>
 
-    <article class="video-card">
-     <iframe width="560" height="315" src="https://www.youtube.com/embed/cbu9Kbl25m8?si=k6GndYOjRX8P42Gm"
-       title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-       encrypted-media; gyroscope; picture-in-picture; 
-       web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h2>THOMPSON RIVER LIVE WEBCAMS</h2>
-    </article>
+      <article class="video-card">
+        <iframe width="560" height="315" 
+                src="https://www.shahid-kora.live/p/blog-page_801.html"
+                title="Live Stream" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>💨💨 ANCHORAGE AIRPORT LIVE</h2>
+      </article>
 
-    <article class="video-card">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/4kRzwJXaeIM?si=dMgAjdOXeqdH9ENO" 
-         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
-         clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <h2>Bird Feeder Cam </h2>
-    </article>
+      <article class="video-card">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/cbu9Kbl25m8?si=k6GndYOjRX8P42Gm"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>THOMPSON RIVER LIVE WEBCAMS</h2>
+      </article>
 
-  </section>
+      <article class="video-card">
+        <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/4kRzwJXaeIM?si=dMgAjdOXeqdH9ENO"
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h2>Bird Feeder Cam</h2>
+      </article>
 
-</main>
+    </section>
+
+  </main>
 
   <script src="app.js"></script>
-  <script>(function(s){s.dataset.zone='11696717',s.src='https://al5sm.com/tag.min.js'})
-           ([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
-    <script async data-cfasync="false" src="https://3nbf4.com/act/tag.min.js" data-zone="11327421"></script> 
+
+  <script>
+    (function(s){
+      s.dataset.zone='11696717';
+      s.src='https://al5sm.com/tag.min.js';
+    })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
+  </script>
+
+  <script async data-cfasync="false" 
+          src="https://3nbf4.com/act/tag.min.js" 
+          data-zone="11327421"></script> 
+
 </body>
 </html>
 
