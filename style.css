@@ -1,3 +1,15 @@
+.video-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #14273c;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.03);
+}
+
 
 .video-grid {
   display: grid;
