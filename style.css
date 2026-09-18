@@ -1,3 +1,7 @@
+h1, h2, h3 {
+  color: #4da6ff; /* bleu clair pour les titres */
+}
+
 .video-card {
   border-radius: 12px;
   overflow: hidden;
